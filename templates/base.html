@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>
+        {% block title %}
+
+        {% endblock title %}
+    </title>
+
+    {% include 'components/_style.html' %}
+
+</head>
+<body>
+
+<main>
+    {% include 'components/_navbar.html' %}
+
+    {% include 'components/_hero-section.html' %}
+
+    {% include 'components/_about-section.html' %}
+
+    {% include 'components/_barista-section.html' %}
+
+    {% include 'components/_menu-section.html' %}
+
+    {% include 'components/_reviews-section.html' %}
+
+    {% include 'components/_contact-section.html' %}
+
+    {% include 'components/_site-footer.html' %}
+</main>
+
+{% include 'components/_script.html' %}
+
+</body>
+</html>
